@@ -1,4 +1,3 @@
-import pymongo
 from pymongo import MongoClient
 
 client = MongoClient('mongodb://admin:admin@127.0.0.1')
