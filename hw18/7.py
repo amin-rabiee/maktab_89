@@ -14,11 +14,6 @@ result = movie_COLLECTION.aggregate([
     },
     {'$sort':{'count':pymongo.DESCENDING}},# چون تعداد ۱ ها زیاد هست ترمینال نمیتونه همه رو چاپ کنه لذا واضح نیستن اعداد بیشتر از ۱
 
-    # {'$group':{
-    #    '_id':'cast',
-    #     'count':{'$sum':1}
-    # }
-    #  }
 ])
 for i in result:
     print(i)
